@@ -121,7 +121,7 @@ if (isset($_SESSION['email'])) {
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl font-bold text-center text-[#006A71] mb-12">Explore Your Career Path</h2>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Form 1: Find Your Future Career -->
+     
       <div class="bg-yellow-50 p-8 rounded-xl shadow-xl">
         <h3 class="text-2xl font-semibold text-center text-[#48A6A7] mb-6">Find Your Future Career</h3>
         <form method="POST" action="#career-form-1" class="space-y-6">
@@ -204,7 +204,6 @@ if (isset($_SESSION['email'])) {
         ?>
       </div>
 
-      <!-- Form 2: Get Career Guidance -->
       <div class="bg-yellow-50 p-8 rounded-xl shadow-xl z-10 relative">
         <h3 class="text-2xl font-semibold text-center text-[#48A6A7] mb-6">Get Career Guidance</h3>
         <form method="POST" action="#career-form-2" class="space-y-6">
