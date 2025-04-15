@@ -156,8 +156,7 @@
         }
         ?>
       </div>
-
-      <!-- Form 2: Get Career Guidance -->
+      
       <div class="bg-yellow-50 p-8 rounded-xl shadow-xl z-10 relative">
         <h3 class="text-2xl font-semibold text-center text-[#48A6A7] mb-6">Get Career Guidance</h3>
         <form method="POST" action="#career-form-2" class="space-y-6">
@@ -239,8 +238,7 @@
         }
         ?>
       </div>
-
-      <!-- Form 3: Plan Your Next Step -->
+     
       <div class="bg-yellow-50 p-8 rounded-xl shadow-xl">
         <h3 class="text-2xl font-semibold text-center text-[#48A6A7] mb-6">Plan Your Next Step</h3>
         <form method="POST" action="#career-form-3" class="space-y-6">
@@ -343,7 +341,7 @@
         paths using artificial intelligence and expert insights.
       </p>
       <div class="grid md:grid-cols-3 gap-8 text-left">
-        <!-- 6 Info Cards -->
+      
         <div class="bg-yellow-50 p-6 rounded-xl hover:shadow-lg transition shadow">
           <h3 class="text-xl font-semibold text-[#1D63FF] mb-2">🤖 What We Do</h3>
           <p class="text-gray-600">We analyze your interests, skills, personality, and goals to recommend career
@@ -378,7 +376,7 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
+  
   <section id="contact" class="py-20">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <h2 class="text-3xl font-bold text-[#1D63FF] mb-4">Contact Us</h2>
