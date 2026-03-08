@@ -1,0 +1,193 @@
+/* ===== CHAT INTERFACE STYLES ===== */
+
+/* Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #006A71; /* Dark teal */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.chat-button i {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+    background: #48A6A7; /* Lighter teal */
+}
+
+/* Chat Window */
+.chat-window {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 350px;
+    height: 500px;
+    background: #F2EFE7; /* Light beige */
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+/* Show chat window when open */
+body.chat-open .chat-window {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Close Button */
+.chat-window .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    background: #9ACBD0; /* Light blue */
+    border: none;
+    border-radius: 50%;
+    color: #006A71; /* Dark teal */
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.chat-window .close:hover {
+    background: #006A71; /* Dark teal */
+    color: white;
+}
+
+/* Chat Messages Area */
+.chat {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Message Styles */
+.chat .user,
+.chat .model,
+.chat .error {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    line-height: 1.4;
+    animation: fadeIn 0.3s ease;
+}
+
+/* User Message */
+.chat .user {
+    background: #006A71; /* Dark teal */
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 5px;
+}
+
+/* Model Message */
+.chat .model {
+    background: #9ACBD0; /* Light blue */
+    color: #006A71; /* Dark teal */
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 15px;
+}
+
+/* Error Message */
+.chat .error {
+    background: #FEE2E2;
+    color: #B91C1C;
+    align-self: flex-start;
+    border-bottom-left-radius: 5px;
+}
+
+/* Input Area */
+.input-area {
+    padding: 15px;
+    border-top: 1px solid #9ACBD0; /* Light blue */
+    display: flex;
+    gap: 10px;
+}
+
+/* Input Field */
+.input-area input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #9ACBD0; /* Light blue */
+    border-radius: 20px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #F2EFE7; /* Light beige */
+    color: #006A71; /* Dark teal */
+}
+
+.input-area input:focus {
+    border-color: #006A71; /* Dark teal */
+}
+
+/* Send Button */
+.input-area button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #006A71; /* Dark teal */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-area button:hover {
+    background: #48A6A7; /* Lighter teal */
+    transform: scale(1.05);
+}
+
+/* Loading Indicator */
+.loader {
+    width: 40px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.loader::before,
+.loader::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #48A6A7; /* Lighter teal */
+    border-radius: 50%;
+    animation: bounce 0.5s ease infinite alternate;
+}
+
+.loader::after {
+    animation-delay: 0.2s;
+}
