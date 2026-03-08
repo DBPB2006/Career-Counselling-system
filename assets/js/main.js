@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Gemini AI Client
     const ai = new GoogleGenAI({
-        apiKey: "AIzaSyA7kUZsXGb9x2zvm899XjxJBEkN3s_lJnw"
+        apiKey: ""
     });
 
     // Toggle chat window
